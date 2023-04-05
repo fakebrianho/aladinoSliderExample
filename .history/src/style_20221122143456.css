@@ -1,0 +1,98 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.carousel {
+	width: 100%;
+}
+
+.cell {
+	width: 60%;
+	margin: 0 20px;
+	height: 70vh;
+}
+
+.cell img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+canvas {
+	z-index: -1;
+}
+
+h1 {
+	font-size: 3em;
+	color: white;
+}
+
+.sampleText {
+	position: absolute;
+	right: 0;
+	/* left: 20px; */
+	bottom: 0;
+	/* opacity: 1 !important; */
+}
+
+/* #distortion-text {
+	position: absolute;
+	bottom: 0;
+	right: -20px;
+	/* color: white; */
+
+.distort {
+	position: absolute;
+	bottom: 0;
+	right: -20px;
+	color: white;
+}
+/* #distortion-text { */
+/* color: white; */
+/* } */
+
+.test {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* z-index: ; */
+}
+
+/* .test > canvas {
+	z-index: -3;
+} */
+
+/* #c {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+	z-index: -4;
+} */
+
+#distortion-text {
+	z-index: 4;
+}
+
+#distortion-text:hover {
+	display: none;
+}

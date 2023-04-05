@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- <link rel='stylesheet' href='/src/style.css'> -->
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      margin: 0 auto;
+    }
+
+    .carousel {
+      width: 100%;
+    }
+
+    .cell {
+      width: 60%;
+      margin: 0 20px;
+      height: 70vh;
+    }
+
+    .cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    canvas {
+      z-index: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="carousel">
+      <div class="cell">
+        <h1 class='sampleText'>HELLO World</h1>
+        <img src="/images/vibe1.jpg" />
+      </div>
+      <div class="cell">
+        <img src="/images/vibe2.jpg" />
+      </div>
+      <div class="cell">
+        <img src="/images/vibe3.jpg" />
+      </div>
+      <div class="cell">
+        <img src="/images/vibe4.jpg" />
+      </div>
+      <div class="cell">
+        <img src="/images/vibe5.jpg" />
+      </div>
+      <div class="cell">
+        <img src="/images/vibe6.jpg" />
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
